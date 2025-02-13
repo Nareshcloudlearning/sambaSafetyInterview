@@ -1,0 +1,6 @@
+<template>
+    <lightning-button label={buttonLabel} onclick={openModal}></lightning-button>
+    <template if:true={isModalOpen}>
+        <c-child-component onclosemodal={handleCloseModal} onsave={updateButtonLabel}></c-child-component>
+    </template>
+</template>
